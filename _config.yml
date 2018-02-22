@@ -1,0 +1,12 @@
+title: BSM
+description: Bundled Software Manager
+
+markdown: kramdown
+
+theme: minima
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
