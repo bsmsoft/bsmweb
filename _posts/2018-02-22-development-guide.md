@@ -25,15 +25,14 @@ title: App Development Guide
 
   * config user
 
-  * shell
-  * output format
+  * output format (plain, sh, csh, python, json, ...)
   * verbose
 
-  * option
   * operation
+
+  * option
   * scenario/version name
   * software root
-
   * release repo
   * release info dir
 * option
