@@ -12,13 +12,6 @@ title: App Development Guide
 
 # All config
 
-* operation
-* app
-* user
-* control
-  * shell
-  * output format
-  * verbose
 * command
   * app id
   * config app
@@ -35,6 +28,12 @@ title: App Development Guide
   * software root
   * release repo
   * release info dir
+* operation
+* app
+* user
+* control
+  * output format
+  * verbose
 * option
 * info
 * scenario
