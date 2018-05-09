@@ -12,7 +12,7 @@ title: App Development Guide
 
 # All config
 
-* command
+* entry
   * app id
   * config app
 
@@ -21,26 +21,28 @@ title: App Development Guide
   * output format (plain, sh, csh, python, json, ...)
   * verbose
 
-  * operation
-
   * option
   * scenario/version name
   * software root
   * release repo
   * release info dir
-* operation
+
 * app
 * user
+* info
+
 * control
   * output format
   * verbose
-* option
-* info
+
 * scenario
+  * option
 * release
   * version
   * setting
   * package
+
+* operation, (not config)
 
 # Other
 
