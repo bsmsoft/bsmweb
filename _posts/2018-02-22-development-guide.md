@@ -13,9 +13,11 @@ title: App Development Guide
 # All config
 
 * entry
-  * app id
+  * config app file
   * config app
+  * app id
 
+  * config user file
   * config user
 
   * output format (plain, sh, csh, python, json, ...)
@@ -31,8 +33,8 @@ title: App Development Guide
 * user
 * info
 
-* control
-  * output format
+* output
+  * format
   * verbose
 
 * scenario
@@ -43,6 +45,26 @@ title: App Development Guide
   * package
 
 * operation, (not config)
+
+# Output
+
+* value
+
+* env
+  * current release
+    * app
+      * solo
+      * path
+      * path_overwrite
+    * release
+      * solo
+      * path
+      * path_overwrite
+  * origin
+  * current final
+  * change
+    * set
+    * unset
 
 # Other
 
