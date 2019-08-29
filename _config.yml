@@ -8,8 +8,8 @@ remote_theme: pmarsceill/just-the-docs
 search_enabled: true
 
 aux_links:
-	'BSM on GitHub':
-    - "//github.com/bsmsoft/bsm"
+  'BSM on GitHub':
+    - //github.com/bsmsoft/bsm
 
 footer_content: 'Copyright &copy; 2017-2019 BSM Soft. Distributed by the <a href="https://github.com/bsmsoft/bsm/tree/master/LICENSE.txt">MIT license.</a>'
 
