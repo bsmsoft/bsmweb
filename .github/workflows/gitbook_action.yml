@@ -1,0 +1,39 @@
+name: 'bsmsoft.github.io Deployment Action'
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: webfactory/ssh-agent@v0.2.0
+      with:
+        ssh-private-key: ${{ secrets.BSMSOFT_DEPLOY_KEY }}
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: setup_gitbook
+      run: |
+        npm install gitbook-cli -g
+        gitbook -v
+        gitbook install
+    - name: build_gitbook
+      run: |
+        gitbook build
+    - name: push_to_pages
+      run: |
+        rm -rf bsmsoft.github.io
+        git clone https://github.com/bsmsoft/bsmsoft.github.io.git
+        cd bsmsoft.github.io
+        rm -rf *
+        cp -r ../_book/* .
+        git config --local user.name 'Xianghu Zhao'
+        git config --local user.email 'xianghuzhao@gmail.com'
+        git add *
+        git commit -m "Update and deploy"
+        git push git@github.com:bsmsoft/bsmsoft.github.io.git master

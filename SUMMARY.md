@@ -4,12 +4,12 @@
 
 ## BSMDemo as an example
 
-* Installation
+* [Installation](bsmdemo.md)
 * Commands
 
 ## End user guide
 
-* Installation
+* [Installation](end_user.md)
 * Commands
 
 ## Application development guide
