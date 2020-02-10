@@ -1,0 +1,23 @@
+{
+    "title": "BSM Documentation",
+    "description": "BSM Documentation",
+    "author": "Xianghu Zhao",
+    "links": {
+        "sharing": {
+            "google": false,
+            "facebook": false,
+            "twitter": false,
+            "all": true
+        }
+    },
+    "plugins": ["github", "edit-link"],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/bsmsoft/bsm"
+        },
+        "edit-link": {
+          "base": "https://github.com/bsmsoft/bsmsoft.github.io/tree/master",
+          "label": ""
+        }
+    }
+}
