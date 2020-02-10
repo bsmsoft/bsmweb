@@ -30,10 +30,13 @@ jobs:
         rm -rf bsmsoft.github.io
         git clone https://github.com/bsmsoft/bsmsoft.github.io.git
         cd bsmsoft.github.io
-        rm -rf *
+        ls -Al
+        rm -rf !(README.md|.git)
+        ls -Al
         cp -r ../_book/* .
+        ls -Al
         git config --local user.name 'Xianghu Zhao'
         git config --local user.email 'xianghuzhao@gmail.com'
-        git add *
+        git add .
         git commit -m "Update and deploy"
         git push git@github.com:bsmsoft/bsmsoft.github.io.git master
