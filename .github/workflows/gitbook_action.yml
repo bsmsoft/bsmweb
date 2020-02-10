@@ -31,7 +31,7 @@ jobs:
         git clone https://github.com/bsmsoft/bsmsoft.github.io.git
         cd bsmsoft.github.io
         ls -Al
-        rm -rf !(README.md|.git)
+        ls | grep -v 'README.md\|.git' | xargs rm -rf
         ls -Al
         cp -r ../_book/* .
         ls -Al
