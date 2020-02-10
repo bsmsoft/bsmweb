@@ -17,3 +17,7 @@
 * Define application
 * Configuration
 * Write handlers
+
+---
+
+* [About the documentation](about.md)
