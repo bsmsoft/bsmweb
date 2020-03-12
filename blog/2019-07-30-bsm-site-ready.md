@@ -16,7 +16,7 @@ The sources are located at
 
 <!--truncate-->
 
-The page will be automatically generated with
+The page will be automatically published with
 [GitHub Actions](https://github.com/bsmsoft/bsmweb/actions)
 when sources are pushed to master branch of
 <https://github.com/bsmsoft/bsmweb>.

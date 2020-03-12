@@ -1,22 +1,9 @@
-# BSM Documentation
+# BSM Web Source
 
-BSM (Bundled Software Manager) is developed in order to simplify the
-deployment and usage of software which has many packages and
-dependencies.
+This repository is the source of <https://bsmsoft.github.io/>.
+The web is created with
+[Docusaurus](https://docusaurus.io/).
 
-## Features
-
-### Git as software repository
-
-BSM utilizes git as the software
-repository. Different software versions are distinguished by git tags.
-The details of software are defined in the git repository including
-installation instructions, environment, dependencies, etc. Commands are
-supported for various shells, including bash, csh, zsh, tcsh and more
-could be extended. Json output and python API are also available for
-advanced development. The installation of each package could be
-configured separately and extended with customized handler. BSM manages
-the environment variables and the version cleaning and switching are
-easy. It also has fine environment control on a single package. Users
-can also define their own packages easily and these packages will be
-managed by BSM with simple configuration.
+The web will be automatically published with
+[GitHub Actions](https://github.com/bsmsoft/bsmweb/actions)
+when pushed to master branch.
