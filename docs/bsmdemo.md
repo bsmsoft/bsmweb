@@ -1,4 +1,6 @@
-# BSMDemo as an example
+---
+title: BSMDemo
+---
 
 BSMDemo is quite simple which do not includes too many advanced
 features.

@@ -17,21 +17,19 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: setup_gitbook
+    - name: setup_docusaurus
       run: |
-        npm install gitbook-cli -g
-        gitbook -v
-        gitbook install
+        yarn install
     - name: build_gitbook
       run: |
-        gitbook build
+        yarn build
     - name: push_to_pages
       run: |
         rm -rf bsmsoft.github.io
         git clone https://github.com/bsmsoft/bsmsoft.github.io.git
         cd bsmsoft.github.io
         ls | grep -v 'README.md\|.git' | xargs rm -rf
-        cp -r ../_book/* .
+        cp -r ../build/* .
         git status
         git diff
         git add .
