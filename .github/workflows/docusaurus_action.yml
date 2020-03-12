@@ -1,4 +1,4 @@
-name: 'bsmsoft.github.io Deployment Action'
+name: 'bsmsoft.github.io Deployment'
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
