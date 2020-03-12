@@ -23,6 +23,7 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
+/*
 @media screen and (max-width: 996px) {
   :root {
     --ifm-font-size-base: 15px;
@@ -34,3 +35,4 @@
     --ifm-font-size-base: 17px;
   }
 }
+*/
