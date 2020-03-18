@@ -31,6 +31,7 @@ jobs:
         ls | grep -v 'README.md\|.git' | xargs rm -rf
         cp -r ../build/* .
         git status
+        [[ `git status --porcelain` ]] || exit 0
         git add .
         git config --local user.name 'Xianghu Zhao'
         git config --local user.email 'xianghuzhao@gmail.com'
